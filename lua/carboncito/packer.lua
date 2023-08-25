@@ -36,4 +36,9 @@ return require('packer').startup(function(use)
 	  }
   }
   use('Mofiqul/vscode.nvim')
+  use('windwp/nvim-ts-autotag')
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 end)
